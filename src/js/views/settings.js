@@ -37,6 +37,7 @@ define('views/settings',[
             function saveStages() {
                 //update all stages
                 $scope.allStages.forEach(updateStage);
+                $stages._update();
                 return $stages.save();
             }
 

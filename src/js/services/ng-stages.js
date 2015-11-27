@@ -123,7 +123,7 @@ define('services/ng-stages',[
             var rawStage = this._rawStages[stage.index];
             if (rawStage) {
                 angular.extend(rawStage,stage);
-                this._update();
+                // this._update();
             } else {
                 throw new Error("stage with " + stage.id + " cannot be found");
             }
